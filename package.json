@@ -1,6 +1,6 @@
 {
   "name": "@laragis/tsup-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configs for tsup",
   "keywords": [
     "tsup",
@@ -27,7 +27,7 @@
   "module": "build/legacy/index.js",
   "types": "build/legacy/index.d.ts",
   "files": [
-    "dist",
+    "build",
     "src",
     "package.json"
   ],
