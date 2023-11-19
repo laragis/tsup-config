@@ -1,0 +1,60 @@
+{
+  "name": "@laragis/tsup-config",
+  "version": "0.0.1",
+  "description": "Configs for tsup",
+  "keywords": [
+    "tsup",
+    "config"
+  ],
+  "repository": "https://github.com/laragis/tsup-config",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./build/modern/index.d.ts",
+        "default": "./build/modern/index.js"
+      },
+      "require": {
+        "types": "./build/modern/index.d.cts",
+        "default": "./build/modern/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "build/legacy/index.cjs",
+  "module": "build/legacy/index.js",
+  "types": "build/legacy/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsup",
+    "clean": "rimraf ./build",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "@laragis/tsconfig": "github:laragis/tsconfig",
+    "@types/node": "^20.9.1",
+    "cross-env": "^7.0.3",
+    "esbuild-plugin-file-path-extensions": "^1.0.0",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.3.0",
+    "type-fest": "^4.8.1",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "Truong Thanh Tung <ttungbmt@gmail.com> (https://github.com/ttungbmt)"
+  ]
+}
