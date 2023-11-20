@@ -38,11 +38,13 @@
     "test": "vitest run",
     "test:watch": "vitest --watch"
   },
+  "dependencies": {
+    "esbuild-plugin-file-path-extensions": "^1.0.0"
+  },
   "devDependencies": {
     "@laragis/tsconfig": "github:laragis/tsconfig",
     "@types/node": "^20.9.1",
     "cross-env": "^7.0.3",
-    "esbuild-plugin-file-path-extensions": "^1.0.0",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
