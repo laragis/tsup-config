@@ -42,7 +42,7 @@
     "esbuild-plugin-file-path-extensions": "^1.0.0"
   },
   "devDependencies": {
-    "@laragis/tsconfig": "github:laragis/tsconfig",
+    "@laragis/tsconfig": "^0.0.1",
     "@types/node": "^20.9.1",
     "cross-env": "^7.0.3",
     "prettier": "^3.1.0",
