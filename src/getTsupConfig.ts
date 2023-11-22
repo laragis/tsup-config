@@ -8,6 +8,7 @@ const commonConfig = {
   sourcemap: true,
   clean: true,
   skipNodeModulesBundle: true,
+  splitting: false,
   esbuildPlugins: [esbuildPluginFilePathExtensions({ esmExtension: 'js' })],
   minify: env === 'production',
 }
