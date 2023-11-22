@@ -1,4 +1,3 @@
-import { esbuildPluginFilePathExtensions } from 'esbuild-plugin-file-path-extensions'
 import { Options } from 'tsup'
 
 const env = process.env.NODE_ENV
@@ -8,7 +7,7 @@ const commonConfig = {
   sourcemap: true,
   clean: true,
   skipNodeModulesBundle: true,
-  esbuildPlugins: [esbuildPluginFilePathExtensions({ esmExtension: 'js' })],
+  splitting: false,
   minify: env === 'production',
 }
 
